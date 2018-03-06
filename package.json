@@ -1,0 +1,22 @@
+{
+  "name": "joe-stanley-server",
+  "version": "0.2.10",
+  "description": "Server for joestanley.tech",
+  "engines": {
+    "node": "6.13.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jstanley2/personal-webpage/"
+  },
+  "author": "Joseph Stanley",
+  "license": "MIT",
+}
