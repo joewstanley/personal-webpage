@@ -13,6 +13,10 @@ app.get('/v1', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/views', 'v1.min.html'));
 });
 
+app.get('/myth-as-charter', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src/views', 'mac.html'));
+});
+
 app.get('/page-not-found', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/views', 'notfound.min.html'));
 });
