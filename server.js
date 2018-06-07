@@ -18,8 +18,8 @@ app.get('/myth-as-charter', (req, res) => {
 });
 
 app.get('/symptom-calendar', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src/views', 'calendar.html'))
-}
+  res.sendFile(path.join(__dirname, 'src/views', 'calendar.html'));
+});
 
 app.get('/page-not-found', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/views', 'notfound.min.html'));
