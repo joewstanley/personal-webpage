@@ -17,6 +17,10 @@ app.get('/myth-as-charter', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/views', 'mac.html'));
 });
 
+app.get('/symptom-calendar', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src/views', 'calendar.html'))
+}
+
 app.get('/page-not-found', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/views', 'notfound.min.html'));
 });

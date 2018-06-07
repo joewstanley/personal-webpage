@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(Ubuntu-Regular.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 30% 40% 30%;
+  width: 100%;
+  height: 100%;
+}
+
+.calendar-wrapper, .calendar-shift {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.calendar-shift {
+  font-family: Ubuntu, sans-serif;
+  font-size: 8vw;
+  color: #4d4d4d;
+}
+
+.calendar-shift span:hover {
+  cursor: pointer;
+  color: #8e8e8e;
+}
+
+.calendar {
+  width: 30vw;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calendar-bg {
+  fill: #e9ddaf;
+}
+
+.calendar-cell {
+  fill: #f2f2f2;
+}
+
+.calendar-date {
+  font-family: Ubuntu, sans-serif;
+  font-size: 5px;
+  fill: #4d4d4d;
+}
+
+.calendar-header {
+  fill: #d35f5f;
+}
+
+.calendar-text {
+  font-family: Ubuntu, sans-serif;
+  font-size: 8px;
+  fill: #f2f2f2;
+}
+
+.calendar-year {
+  font-family: Ubuntu, sans-serif;
+  font-size: 4px;
+  fill: #f2f2f2;
+}
+
+.calendar-hole {
+  fill: #b3b3b3;
+}
+
+.calendar-stroke {
+  stroke: #4d4d4d;
+  stroke-width: 0.5px;
+}
