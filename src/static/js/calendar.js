@@ -16,7 +16,6 @@ var calendar = (function() {
     width: 100,
     height: 20,
     offset: {
-      month: -1,
       year: 6
     }
   };
@@ -144,10 +143,8 @@ var calendar = (function() {
       .attr('r', CALENDAR_HOLE_DIMENSIONS.r);
   }
 
-  var monthOffset = 0;
   var yearText = null;
   if (CALENDAR_FLAGS.showYear) {
-    monthOffset = CALENDAR_HEADER_DIMENSIONS.offset.month;
     yearText = header.append('text')
       .data([date.getFullYear()])
       .attr('class', 'calendar-year')
@@ -161,7 +158,7 @@ var calendar = (function() {
     .data([MONTH_NAMES[date.getMonth()]])
     .attr('class', 'calendar-text')
     .attr('x', CALENDAR_HEADER_DIMENSIONS.width / 2)
-    .attr('y', CALENDAR_HEADER_DIMENSIONS.height / 2 + monthOffset)
+    .attr('y', CALENDAR_HEADER_DIMENSIONS.height / 2)
     .attr('text-anchor', 'middle')
     .attr('alignment-baseline', 'middle')
     .text(d => d);
